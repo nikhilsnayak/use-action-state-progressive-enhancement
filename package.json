@@ -1,0 +1,27 @@
+{
+  "name": "cosmos-rsc",
+  "version": "1.0.0",
+  "imports": {
+    "#cookies": "./framework/lib/cookies.js",
+    "#router": "./framework/client/router.js",
+    "#link": "./framework/client/link.js"
+  },
+  "scripts": {
+    "build": "node framework/scripts/build.js",
+    "server": "node --conditions react-server framework/server.js",
+    "start": "npm run build && npm run server"
+  },
+  "dependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.26.3",
+    "@babel/preset-react": "^7.26.3",
+    "@babel/register": "^7.25.9",
+    "babel-loader": "^9.2.1",
+    "busboy": "^1.6.0",
+    "express": "^4.21.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-server-dom-webpack": "^19.0.0",
+    "webpack": "^5.97.1"
+  }
+}
